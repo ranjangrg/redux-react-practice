@@ -1,1 +1,44 @@
 /* custom style here */
+
+:root {
+	--app-body-bg-color: 40, 44, 52;
+	--app-body-text-color: 255, 255, 255;
+	--app-btn-bg-color: 240, 248, 255;
+}
+
+/* style copied from bootstrap's btn class */
+.custom-btn {
+	display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: 
+		color .15s ease-in-out,
+		background-color .15s ease-in-out,
+		border-color .15s ease-in-out,
+		box-shadow .15s ease-in-out;
+}
+.custom-btn-alice {
+	background-color: rgba(var(--app-btn-bg-color), 0.5);
+}
+.custom-btn-alice:hover {
+	background-color: rgba(var(--app-btn-bg-color), 1.0);
+}
+.custom-btn-app {
+	background-color: rgba(var(--app-body-bg-color), 1.0);
+	color: rgba(var(--app-body-text-color), 1.0);
+}
+.custom-btn-app:hover {
+	background-color: rgba(var(--app-body-bg-color), 0.8);
+}

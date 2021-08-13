@@ -24,6 +24,10 @@ const mapDispatchToProps = () => {
 };
 
 class SettingsPage extends React.Component {
+	select_elem = (elem) => {
+		elem.target.classList.toggle("selected");
+		console.log(elem.target);
+	};
 	render() {
 		return (<form>
 				<h1 className="py-3"> Change Settings </h1>
@@ -32,7 +36,7 @@ class SettingsPage extends React.Component {
 						<li className="list-group-item"> 
 							<span className="float-start"> Light Mode </span>
 							<span className="btn-group float-end" role="group">
-								<h3 className="btn btn-dark" onClick={() => this.props.changeSettingsMode('Dark')}> DarkMode </h3>
+								<h3 className="btn btn-dark" onClick={(elem) => this.props.changeSettingsMode('Dark') }> DarkMode </h3>
 								<h3 className="btn btn-primary"onClick={() => this.props.changeSettingsMode('Light')}> LightMode </h3>
 							</span>
 						</li>
