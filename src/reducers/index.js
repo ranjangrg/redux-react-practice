@@ -3,7 +3,12 @@ import { combineReducers } from 'redux';
 import changeUsernameReducer from './changeUsername';
 import changeAnimalReducer from './changeAnimal';
 import changePowerlevelReducer from './changePowerLevel';
-import { settingsModeReducer, settingsLevelReducer, settingsPermissionReducer } from './settings';
+import { 
+	settingsModeReducer, 
+	settingsLevelReducer, 
+	settingsPermissionReducer 
+} from './settings';
+import changeCurrentProjectReducer from './projects';
 
 
 const allReducers = combineReducers({
@@ -13,6 +18,7 @@ const allReducers = combineReducers({
 	settingsMode: settingsModeReducer,
 	settingsLevel: settingsLevelReducer,
 	settingsPermission: settingsPermissionReducer,
+	currentProject: changeCurrentProjectReducer
 });
 
 export default allReducers;

@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import './styles/Details.css';  // custom css file
+import './styles/projects.css';  // custom css file
+import './styles/details.css';  // custom css file
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

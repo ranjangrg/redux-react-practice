@@ -1,3 +1,5 @@
+import { projectDefaultState } from '../reducers/projects';
+
 export const changeName = (_payload="-") => {
 	return {
 		type: "CHANGE_USER",
@@ -35,5 +37,12 @@ export const changeSettingsPermission = (_payload=false) => {
 	return {
 		type: "CHANGE_SETTINGS_PERMISSION",
 		payload: has_permission
+	};
+};
+export const changeCurrentProject = (_payload=projectDefaultState) => {
+	let current_project = _payload;
+	return {
+		type: "CHANGE_CURRENT_PROJECT",
+		payload: current_project
 	};
 };
