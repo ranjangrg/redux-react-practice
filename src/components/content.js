@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -7,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from '../pages/home';
 import ProjectsPage from '../pages/projects';
 import SettingsPage from '../pages/settings';
-import ContactPage from '../pages/contact';
+import DetailsPage from '../pages/details';
 
 class Content extends React.Component {
 	render() {
@@ -22,7 +21,7 @@ class Content extends React.Component {
 					<Route path="/home"> <HomePage /> </Route>
 					<Route path="/projects"> <ProjectsPage /> </Route>
 					<Route path="/settings" component={SettingsPage} />
-					<Route path="/contact"> <ContactPage /> </Route>
+					<Route path="/details"> <DetailsPage /> </Route>
 				</Switch>
 			</div>
 		);
